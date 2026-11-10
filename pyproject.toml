@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cmdguard"
+version = "1.0.0"
+description = "Allow, ask or deny shell commands proposed by an AI agent: a safety net and Claude Code PreToolUse hook. Never runs the command. No dependencies."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "TPOALOS"}]
+keywords = ["ai-agents", "claude-code", "hooks", "shell", "safety"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/TPOALOS/cmdguard"
+
+[project.scripts]
+cmdguard = "cmdguard:main"
+
+[tool.setuptools]
+py-modules = ["cmdguard"]
